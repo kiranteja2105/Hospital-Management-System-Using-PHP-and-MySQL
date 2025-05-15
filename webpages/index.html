@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K Hospital Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../assest/CSS/style.css" />
+  </head>
+  <body>
+    <div class="container">
+<!-- login form -->
+      <div class="form-box login">
+        <form action="../backend/login.php" method="post">
+            <h1>K Hospitals login</h1>
+            <div class="input-box">
+                <input type="email" placeholder="Email id" name="Loginemail"
+                required>
+                <i class='bx bxs-envelope'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="password" name="Loginpassword"
+                required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="forgot-link">
+                <a href="#">forgot password?</a>
+            </div>
+            <button type="submit" class="btn">login</button>
+        </form>
+      </div>
+<!--Registration-->
+      <div class="form-box register">
+        <form action="../backend/regpatient.php" method="post">
+            <h1>K Hospitals Registration</h1>
+            <div class="input-box">
+              <input type="text" placeholder="Name" name="patient_name"
+              required>
+              <i class='bx bxs-user'></i>
+          </div>
+          <div class="input-box">
+            <input type="number" placeholder="Mobile Number" name="patient_mobile" 
+            required>
+            <i class='bx bxs-contact'></i>
+        </div>
+            <div class="input-box">
+                <input type="email" placeholder="Email" name="patient_email"
+                required>
+                <i class='bx bxs-envelope'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="password" name="patient_password"
+                required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <button type="submit" class="btn">Register</button>
+        </form>
+      </div>
+
+      
+    <!--toggle-->
+    <div class="toggle-box">
+       <div class="toggle-panel toggle-left">
+        <h1>Hello, Welcome!</h1>
+        <p>Don't have an account?</p>
+        <button class="btn register-btn">Register</button>
+       </div>
+       <div class="toggle-panel toggle-right">
+        <h1>Welcome Back!</h1>
+        <p>Already have an account?</p>
+        <button class="btn login-btn">Login</button>
+       </div>
+    </div>
+
+    </div>
+
+
+    <script src="../assest/JS/script.js"></script>
+  </body>
+</html>
